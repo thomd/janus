@@ -4,6 +4,7 @@ nerdtree_plugin
 
 after
 autoload
+compiler
 doc
 plugin
 ruby
@@ -14,4 +15,5 @@ ftdetect
 ftplugin
 colors
 indent
+templates
 .VimballRecord
