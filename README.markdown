@@ -1,9 +1,6 @@
 # Janus: vim Distribution
 
-Janus is a fork of [Carlhuda's vim
-Distribution](https://github.com/carlhuda/janus).
-
-## Pre-requisites
+Janus is my fork of [Carlhuda's vim Distribution](https://github.com/carlhuda/janus).
 
 Janus is built primarily for [MacVim](http://code.google.com/p/macvim/) on OSX.
 Download it [here](https://github.com/b4winckler/macvim/downloads).
@@ -11,21 +8,12 @@ Download it [here](https://github.com/b4winckler/macvim/downloads).
 Alternatively, you can use Janus with the bundled console `vim` installation on
 OSX (via Terminal), or with any other `vim` or `gvim` installation.
 
-Linux users can install `gvim` for an experience identical to MacVim.
-On Debian/Ubuntu, simply `apt-get install vim-gnome`. For remote
-servers, install console vim with `apt-get install vim-nox`.
-
-On a fresh Ubuntu install you also have to install the packages `rake` and `ruby-dev`
-before running the install script and `exuberant-ctags` for ctags
-support.
-
 ## Installation
 
-0. `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old;
-   done`
-1. `git clone git://github.com/thomd/janus.git ~/.vim`
-2. `cd ~/.vim`
-3. `rake`
+  `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old; done`
+  `git clone git://github.com/thomd/janus.git ~/.vim`
+  `cd ~/.vim`
+  `rake`
 
 or
 
