@@ -10,14 +10,14 @@ OSX (via Terminal), or with any other `vim` or `gvim` installation.
 
 ## Installation
 
-  `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old; done`
-  `git clone git://github.com/thomd/janus.git ~/.vim`
-  `cd ~/.vim`
-  `rake`
+    for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old; done
+    git clone git://github.com/thomd/janus.git ~/.vim
+    cd ~/.vim
+    rake
 
 or
 
-  `curl https://github.com/thomd/janus/raw/master/bootstrap.sh -o - | sh`
+    curl https://github.com/thomd/janus/raw/master/bootstrap.sh -o - | sh
 
 ## Customization
 
