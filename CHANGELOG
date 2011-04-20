@@ -1,3 +1,7 @@
+2011-04-20 thomd
+
+	* FEATURE: added jasmine.vim
+
 2010-12-29  wycats
 
 	* FEATURE: Opening with an explicit directory starts on NERDTree

@@ -1,22 +1,7 @@
-# Janus: Carlhuda's vim Distribution
+# Janus: vim Distribution
 
-This is a basic distribution of vim plugins and tools intended to be run
-on top of the latest MacVIM snapshot.
-
-We (Carl and Yehuda) both use this distribution for our own use, and
-welcome patches and contributions to help make it an effective way to
-get started with vim and then use it productively for years to come.
-
-At present, we are still learning to use vim ourselves, so you should
-anticipate a period of rapid development while we get a handle on the
-best tools for the job. So far, we have mostly integrated existing
-plugins and tools, and we anticipate to continue doing so while also
-writing our own plugins as appropriate.
-
-In general, you can expect that the tools we use work well together and
-that we have given careful thought to the experience of using MacVIM
-with the tools in question. If you run into an issue using it, please
-report an issue to the issue tracker.
+Janus is a fork of [Carlhuda's vim
+Distribution](https://github.com/carlhuda/janus).
 
 ## Pre-requisites
 
@@ -38,13 +23,13 @@ support.
 
 0. `for i in ~/.vim ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old;
    done`
-1. `git clone git://github.com/carlhuda/janus.git ~/.vim`
+1. `git clone git://github.com/thomd/janus.git ~/.vim`
 2. `cd ~/.vim`
 3. `rake`
 
 or
 
-  `curl https://github.com/carlhuda/janus/raw/master/bootstrap.sh -o - | sh`
+  `curl https://github.com/thomd/janus/raw/master/bootstrap.sh -o - | sh`
 
 ## Customization
 
@@ -66,31 +51,6 @@ If you want to add additional Vim plugins you can do so by adding a
 
 To update to the latest version of the distribution, just run `rake`
 again inside your `~/.vim` directory.
-
-# Intro to VIM
-
-Here's some tips if you've never used VIM before:
-
-## Tutorials
-
-* Type `vimtutor` into a shell to go through a brief interactive
-  tutorial inside VIM.
-* Read the slides at [VIM: Walking Without Crutches](http://walking-without-crutches.heroku.com/#1).
-
-## Modes
-
-* VIM has two modes:
-  * insert mode- stuff you type is added to the buffer
-  * normal mode- keys you hit are interpretted as commands
-* To enter insert mode, hit `i`
-* To exit insert mode, hit `<ESC>`
-
-## Useful commands
-
-* Use `:q` to exit vim
-* Certain commands are prefixed with a `<Leader>` key, which maps to `\`
-  by default. Use `let mapleader = ","` to change this.
-* Keyboard [cheat sheet](http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png).
 
 # Features
 
@@ -254,6 +214,10 @@ Markdown preview takes the current buffer, converts the Markdown to
 HTML, and opens it in your default browser.
 
 **Customizations**: Janus binds `<Leader>p` to this plugin.
+
+## Jasmine
+
+[Jasmine plugin](git://github.com/claco/jasmine.vim) by Christopher H. Laco
 
 ## Additional Syntaxes
 
