@@ -154,7 +154,7 @@ vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "puppet",           "git://github.com/ajf/puppet-vim.git"
 vim_plugin_task "scala",            "git://github.com/bdd/vim-scala.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
-vim_plugin_task "jasmine",          "git://github.com/claco/jasmine.vim.git"
+vim_plugin_task "jasmine",          "git://github.com/thomd/vim-jasmine.git"
 
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
