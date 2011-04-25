@@ -1,12 +1,12 @@
 # Janus: vim Distribution
 
-Janus is my fork of [Carlhuda's vim Distribution](https://github.com/carlhuda/janus).
+Janus is a personal __fork__ of [Carlhuda's](https://github.com/carlhuda/janus) vim Distribution for my daily needs.
 
-Janus is built primarily for [MacVim](http://code.google.com/p/macvim/) on OSX.
-Download it [here](https://github.com/b4winckler/macvim/downloads).
+## Diff to Carlhuda's Janus
 
-Alternatively, you can use Janus with the bundled console `vim` installation on
-OSX (via Terminal), or with any other `vim` or `gvim` installation.
+    2011/04/25
+    
+        NEW: added jasmine plugin
 
 ## Installation
 
@@ -205,7 +205,9 @@ HTML, and opens it in your default browser.
 
 ## Jasmine
 
-[Jasmine plugin](git://github.com/claco/jasmine.vim) by Christopher H. Laco
+[Jasmine plugin](git://github.com/thomd/vim-jasmine) by thomd.
+
+Adds syntax highlighting and some snippets.
 
 ## Additional Syntaxes
 
