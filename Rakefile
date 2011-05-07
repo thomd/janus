@@ -156,7 +156,12 @@ vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "jasmine",          "git://github.com/thomd/vim-jasmine.git"
 
 vim_plugin_task "hammer",           "git://github.com/robgleeson/hammer.vim.git" do
-  sh "gem install github-markup redcarpet"
+   if !Gem.available?('github-markup')
+     sh "gem install github-markup"
+   end
+   if !Gem.available?('redcarpet')
+     sh "sudo gem install redcarpet"
+   end
 end
 
 vim_plugin_task "command_t",        "http://s3.wincent.com/command-t/releases/command-t-1.2.1.vba" do
