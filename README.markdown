@@ -5,7 +5,7 @@ Janus is a personal __fork__ of [Carlhuda's](https://github.com/carlhuda/janus) 
 ## Diff to Carlhuda's Janus
 
     2011/04/25
-    
+
         NEW: added jasmine plugin
 
 ## Installation
