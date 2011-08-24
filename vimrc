@@ -14,6 +14,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set list listchars=tab:\ \ ,trail:·
+
 " Removes trailing spaces
 function TrimWhiteSpace()
   %s/\s*$//
@@ -23,6 +24,9 @@ autocmd FileWritePre * :call TrimWhiteSpace()
 autocmd FileAppendPre * :call TrimWhiteSpace()
 autocmd FilterWritePre * :call TrimWhiteSpace()
 autocmd BufWritePre * :call TrimWhiteSpace()
+
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 " Searching
 set hlsearch
