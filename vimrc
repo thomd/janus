@@ -160,3 +160,6 @@ set showcmd
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+" format xml files (http://ku1ik.com/formatting-xml-in-vim-with-indent-command)
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
