@@ -35,6 +35,15 @@ If you want to add additional Vim plugins you can do so by adding a
     vim_plugin_task "zencoding", "git://github.com/mattn/zencoding-vim.git"
     vim_plugin_task "minibufexpl", "git://github.com/fholgado/minibufexpl.vim.git"
 
+If you do not wish to use one of the plugins Janus provides out of the
+box you can have it skipped using the `skip_vim_plugin` method in
+`~/.janus.rake`:
+
+    skip_vim_plugin "color-sampler"
+
+**Note**: Skipping the plugin will only apply to installation. It won't
+remove configurations or mappings Janus might have added for it.
+
 ## Updating to the latest version
 
 To update to the latest version of the distribution, just run `rake`
@@ -63,9 +72,8 @@ Janus ships with a number of basic customizations for vim:
 * `<Leader>tr` expands to `:te {directory of current file}/` (open in a
   new MacVIM tab)
 * `<C-P>` inserts the directory of the current file into a command
-* Automatic insertion of closing quotes, parenthesis, and braces
 
-## "Project Drawer" aka NERDTree
+## "Project Drawer" aka [NERDTree](http://github.com/wycats/nerdtree)
 
 NERDTree is a file explorer plugin that provides "project drawer"
 functionality to your vim projects.  You can learn more about it with
@@ -86,7 +94,8 @@ NERDTree:
 * In general, assume that there is a single NERDTree buffer on the left
   and one or more editing buffers on the right
 
-## Ack.vim
+## [Ack.vim](http://github.com/mileszs/ack.vim)
+
 
 Ack.vim uses ack to search inside the current directory for a pattern.
 You can learn more about it with :help Ack
@@ -94,14 +103,14 @@ You can learn more about it with :help Ack
 **Customizations**: Janus rebinds command-shift-f (`<D-F>`) to bring up
 `:Ack `.
 
-## Align
+## [Align](http://github.com/tsaleh/vim-align)
 
 Align lets you align statements on their equal signs, make comment
 boxes, align comments, align declarations, etc.
 
 * `:5,10Align =>` to align lines 5-10 on `=>`'s
 
-## Command-T
+## [Command-T](https://wincent.com/products/command-t)
 
 Command-T provides a mechanism for searching for a file inside the
 current working directory. It behaves similarly to command-t in
@@ -110,7 +119,7 @@ Textmate.
 **Customizations**: Janus rebinds command-t (`<D-t>`) to bring up this
 plugin. It defaults to `<Leader>t`.
 
-## ConqueTerm
+## [ConqueTerm](http://code.google.com/p/conque/)
 
 ConqueTerm embeds a basic terminal inside a vim buffer. The terminal has
 an insert mode in which you can type commands, tab complete and use the
@@ -123,7 +132,7 @@ other vim commands on the buffer, like yank and paste.
 **Note**: To get colors working, you might have to `export TERM=xterm`
 and use `ls -G` or `gls --color`
 
-## indent\_object
+## [indent\_object](http://github.com/michaeljsmith/vim-indent-object)
 
 Indent object creates a "text object" that is relative to the current
 ident. Text objects work inside of visual mode, and with `c` (change),
@@ -133,7 +142,7 @@ normal mode, and type `v ii`. Then repeat `ii`.
 **Note**: indent\_object seems a bit busted. It would also be nice if
 there was a text object for Ruby `class` and `def` blocks.
 
-## surround
+## [surround](http://github.com/tpope/vim-surround)
 
 Surround allows you to modify "surroundings" around the current text.
 For instance, if the cursor was inside `"foo bar"`, you could type
@@ -141,22 +150,23 @@ For instance, if the cursor was inside `"foo bar"`, you could type
 
 There's a lot more; check it out at `:help surround`
 
-## NERDCommenter
+## [NERDCommenter](http://github.com/ddollar/nerdcommenter)
 
 NERDCommenter allows you to wrangle your code comments, regardless of
-filetype. View `help :NERDCommenter` for all the details.
+filetype. View `:help NERDCommenter` for all the details.
 
 **Customizations**: Janus binds command-/ (`<D-/>`) to toggle comments.
 
-## SuperTab
+## [SuperTab](http://github.com/ervandew/supertab)
 
 In insert mode, start typing something and hit `<TAB>` to tab-complete
 based on the current context.
 
 ## ctags
 
-Janus includes the TagList plugin, which binds `:Tlist` to an overview
-panel that lists all ctags for easy navigation.
+Janus includes the [TagList](http://github.com/vim-scripts/taglist.vim)
+plugin, which binds `:Tlist` to an overview panel that lists all ctags
+for easy navigation.
 
 **Customizations**: Janus binds `<Leader>rt` to the ctags command to
 update tags.
@@ -169,7 +179,7 @@ ctag support. Tag navigation creates a stack which can traversed via
 `Ctrl-]` (to find the source of a token) and `Ctrl-T` (to jump back up
 one level).
 
-## Git Support (Fugitive)
+## Git Support ([Fugitive](http://github.com/tpope/vim-fugitive))
 
 Fugitive adds pervasive git support to git directories in vim. For more
 information, use `:help fugitive`
@@ -181,7 +191,7 @@ hunks in the file.
 Use `:Gdiff` on an open file to see what changes have been made to that
 file
 
-## Gist-vim
+## [Gist-vim](http://github.com/mattn/gist-vim)
 
 Nice [gist integration](https://github.com/mattn/gist-vim) by mattn.
 Requires exporting your `GITHUB_TOKEN` and `GITHUB_USER` as environment
@@ -189,12 +199,12 @@ variables or setup your [GitHub token config](http://help.github.com/git-email-s
 
 Try `:Gist`, `:Gist -p` and visual blocks.
 
-## ZoomWin
+## [ZoomWin](http://github.com/vim-scripts/ZoomWin)
 
 When working with split windows, ZoomWin lets you zoom into a window and
 out again using `Ctrl-W o`
 
-**Customizations**: Janus binds `<Leader>z` to `:ZoomWin`
+**Customizations**: Janus binds `<Leader><Leader>` to `:ZoomWin`
 
 ## Jasmine
 
