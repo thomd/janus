@@ -259,4 +259,4 @@ Janus also has a few customized versions of popular themes:
 * molokai
 * railscasts+
 * vwilight
-
+* wasabi256
