@@ -212,6 +212,18 @@ out again using `Ctrl-W o`
 
 Adds syntax highlighting and some snippets.
 
+## Jade
+
+[Jade](https://github.com/digitaltoad/vim-jade)
+
+Vim Jade template engine syntax highlighting and indention.
+
+## LESS
+
+[Less](https://github.com/lunaru/vim-less.git)
+
+LessCSS Syntax support in Vim
+
 ## Hammer
 
 Hammer takes the current buffer, tries to convert it to HTML, and opens
