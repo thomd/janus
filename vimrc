@@ -165,3 +165,7 @@ endif
 
 " format xml files (http://ku1ik.com/formatting-xml-in-vim-with-indent-command)
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+
+" enable xml syntax folding
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
