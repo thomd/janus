@@ -49,7 +49,7 @@ set noequalalways
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
+let g:NERDTreeWinSize=40
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
