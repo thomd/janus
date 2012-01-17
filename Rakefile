@@ -161,6 +161,13 @@ vim_plugin_task "wasabi",           "git://github.com/thomd/vim-wasabi-colorsche
 vim_plugin_task "jade",             "git://github.com/digitaltoad/vim-jade.git"
 vim_plugin_task "less",             "https://github.com/lunaru/vim-less.git"
 
+vim_plugin_task "powerline",        "git://github.com/Lokaltog/vim-powerline.git" do
+  cwd = File.expand_path("../", __FILE__)
+  dir = File.expand_path("tmp/powerline")
+  sh "mkdir -p powerline"
+  sh "cp -RfL #{dir}/powerline/* #{cwd}/powerline/"
+end
+
 vim_plugin_task "hammer",           "git://github.com/robgleeson/hammer.vim.git" do
    if !Gem.available?('github-markup')
      sh "gem install github-markup"
